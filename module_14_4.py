@@ -10,7 +10,7 @@ connection = sqlite3.connect('initiate_db')
 cursor = connection.cursor()
 initiate_db()
 
-api = '7798478890:AAEviZPQB4oFDwRcJcMY58AmtZte9m3_OEI'
+api = ''
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
