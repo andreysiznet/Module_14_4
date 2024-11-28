@@ -24,7 +24,6 @@ def get_all_products(id):
     connection = sqlite3.connect("initiate_db")
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM Products WHERE id = ?", (id,))
-    connection.commit()
     prod = cursor.fetchall()
     id, title, description, price = prod[0]
     return f"Название: {title} | Описание: {description} | Цена: {price}"
