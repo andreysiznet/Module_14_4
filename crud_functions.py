@@ -28,4 +28,5 @@ def get_all_products(id):
     prod = cursor.fetchall()
     id, title, description, price = prod[0]
     return f"Название: {title} | Описание: {description} | Цена: {price}"
+    connection.commit()
     connection.close()
