@@ -6,10 +6,10 @@ def initiate_db():
     cursor = connection.cursor()
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS Products(
-    id INTEDGER PRIMARY KEY, 
+    id INTEGER PRIMARY KEY, 
     title TEXT NOT NULL,
     description TEXT,
-    price INTEDGER NOT NULL
+    price INTEGER NOT NULL
     )
     """)
 
