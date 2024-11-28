@@ -8,7 +8,7 @@ from crud_functions import *
 
 connection = sqlite3.connect('initiate_db')
 cursor = connection.cursor()
-initiate_db()
+
 
 api = ''
 bot = Bot(token=api)
